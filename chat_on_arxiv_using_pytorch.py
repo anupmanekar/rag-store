@@ -18,7 +18,7 @@ warnings.filterwarnings('ignore')  # Suppress all other warnings
 os.environ['TRANSFORMERS_VERBOSITY'] = 'error'  # Suppress transformer warnings
 
 load_dotenv()
-login(token = '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')
+login(token = '')
 
 dataset = load_dataset("MongoDB/subset_arxiv_papers_with_embeddings")
 dataset_df = pd.DataFrame(dataset["train"])
